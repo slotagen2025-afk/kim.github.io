@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>kim — Personal Site</title>
+  <meta name="description" content="Portfolio and contact — kim" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">kim</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="เมนู">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — ผมคือ kim.</h1>
+        <p class="lead">Developer • Creator • Problem solver<br>ชอบสร้างของเล็ก ๆ ที่ใช้งานได้จริง</p>
+        <p class="cta">
+          <a class="btn" href="#projects">ผลงาน</a>
+          <a class="btn ghost" href="mailto:kim@duck.com">ติดต่อ: kim@duck.com</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About me</h2>
+      <p>สวัสดีครับ ผมทำงานเป็นนักพัฒนา สนใจทั้ง web, automation และ infra. ผมชอบเรียนรู้เทคโนโลยีใหม่ ๆ และแก้ปัญหาให้เรียบง่ายที่สุด.</p>
+      <ul class="skills">
+        <li>HTML / CSS / JavaScript</li>
+        <li>Node.js / Python</li>
+        <li>Docker / Git / CI</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>คำอธิบายสั้น ๆ ของโปรเจคนี้ — tech stack และ role</p>
+          <p><a href="#" target="_blank" rel="noopener">View</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>คำอธิบายสั้น ๆ ของโปรเจคนี้ — ตัวอย่างการใช้งาน</p>
+          <p><a href="#" target="_blank" rel="noopener">View</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Blog / Notes</h3>
+          <p>บทความสั้น ๆ เกี่ยวกับการแก้ปัญหา เทคนิค หรือไดอารี่การทำงาน</p>
+          <p><a href="#" target="_blank" rel="noopener">Read</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>อยากคุยงานหรือแลกเปลี่ยนไอเดีย ติดต่อผมได้ที่</p>
+      <p class="contact-info">
+        <strong>Email:</strong> <a href="mailto:kim@duck.com">kim@duck.com</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/kim" target="_blank" rel="noopener">github.com/kim</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> kim — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
