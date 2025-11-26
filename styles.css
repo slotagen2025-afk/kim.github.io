@@ -1,0 +1,65 @@
+:root{
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #7c5cff;
+  --glass: rgba(255,255,255,0.03);
+  --maxw: 1000px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071029 0%, #081426 100%);
+  color:#e6eef6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+  font-size:16px;
+}
+
+.container{max-width:var(--maxw);margin:0 auto;padding:24px}
+
+.site-header{background:transparent;position:sticky;top:0;z-index:30;padding:12px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:20px}
+.nav{display:flex;gap:18px}
+.nav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:6px}
+.nav a:hover{color:#fff;background:var(--glass)}
+
+.nav-toggle{display:none;background:none;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:6px 10px;border-radius:8px}
+
+.hero{padding:80px 0;background:linear-gradient(180deg, rgba(124,92,255,0.08), transparent);border-bottom:1px solid rgba(255,255,255,0.02)}
+.hero-inner{text-align:left}
+.hero h1{font-size:36px;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 18px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;margin-right:8px}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+.section{padding:48px 0}
+.section h2{margin-top:0;color:#fff}
+.skills{display:flex;gap:10px;list-style:none;padding:0;margin:12px 0}
+.skills li{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:8px;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.card h3{margin-top:0}
+.card p{color:var(--muted)}
+
+.contact-info a{color:var(--accent);text-decoration:none}
+
+.site-footer{padding:18px 0;border-top:1px solid rgba(255,255,255,0.02);text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .nav{display:none}
+  .nav-toggle{display:inline-block}
+  .hero h1{font-size:28px}
+  .grid{grid-template-columns:1fr}
+  .container{padding:16px}
+}
